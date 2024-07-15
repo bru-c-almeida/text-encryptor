@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryptor App</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="shortcut icon" href="./src/images/favicon.png" type="favicon - light pink crescent moon">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./src/images/logo.png" alt="text encryptor logo">
+            <h1>Text Encryptor</h1>
+        </div>
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" cols="50" placeholder="Type your secret message to encrypt.">If you want to encrypt a message from a language that uses accents, type the message without them or it won't work properly.</textarea>
+        <label for="key">Key:</label>
+        <input type="text" id="key" value="Test Key" size="50" placeholder="Type desired key.">
+        <div class="buttons">
+            <button id="enc-btn">Encrypt</button>
+            <button id="dec-btn">Decrypt</button>
+        </div>
+        <h2>Result:</h2>
+        <div id="result"></div>
+    </div>
+    <script src="./src/scripts/script.js"></script>
+</body>
+</html>
